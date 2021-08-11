@@ -1,0 +1,53 @@
+package com.example.demo;
+
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class Interview {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//List<String> list=new ArrayList();
+//list.add("hello");
+//list.add("lkak");
+//list.stream().filter(a->a.contains("a")).collect(Collectors.toList()).forEach(System.out::println);
+	
+		//List sublist = Arrays.asList(4,5,6,7,8);
+		//List list = Arrays.asList(1, 2, 3, 4, 5);
+		//list.addAll(sublist);
+		List li=Arrays.asList(1,2);
+		
+		li.stream().flatMap(i->i).forEach(System.out::println);;
+		//System.out.print(ss.flatMap(i->i).toArray());
+		
+		/*
+		 * Customer sheridan = new Customer("Sheridan"); Customer ivanova = new
+		 * Customer("Ivanova"); Customer garibaldi = new Customer("Garibaldi");
+		 * 
+		 * sheridan.addOrder(new Order(1)) .addOrder(new Order(2)) .addOrder(new
+		 * Order(3)); ivanova.addOrder(new Order(4)) .addOrder(new Order(5));
+		 * 
+		 * List<Customer> customers = Arrays.asList(sheridan, ivanova, garibaldi);
+		 * customers.stream() .map(customer -> customer.getOrders().stream())
+		 * .forEach(System.out::println);
+		 */
+	
+	}
+	public static int test() {
+		int ret=0;
+		try {
+			ret=3/0;
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+			ret=1;
+			System.out.println("exception:"+ret);
+		}
+		finally {
+			return -1;
+		}
+		//return 2;
+	}
+
+}

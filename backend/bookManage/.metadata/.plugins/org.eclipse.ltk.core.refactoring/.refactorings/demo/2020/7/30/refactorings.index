@@ -1,0 +1,43 @@
+1595518074471	Delete element
+1595519597951	Delete element
+1595519970215	Delete element
+1595522035727	Copy compilation unit
+1595522058188	Copy compilation unit
+1595522062497	Delete element
+1595522158451	Rename compilation unit 'Book.java'
+1595522644929	Rename compilation unit 'User.java'
+1595523315879	Rename package 'com.example.demo.repository'
+1595523330241	Rename package 'com.example.demo.service'
+1595523403132	Rename compilation unit 'BookService.java'
+1595523492755	Rename compilation unit 'BookRepository.java'
+1595523522968	Rename compilation unit 'UserRepository.java'
+1595523605689	Rename compilation unit 'RestBookService.java'
+1595524037101	Rename compilation unit 'RestBookController.java'
+1595524054113	Rename compilation unit 'RestPlaylist_hotController.java'
+1595526220819	Copy compilation unit
+1595526309247	Copy compilation units
+1595526417567	Rename compilation unit 'RestBannertController.java'
+1595529681217	Copy compilation unit
+1595530121542	Copy compilation unit
+1595530152811	Copy compilation unit
+1595530514941	Copy compilation units
+1595530574881	Copy compilation unit
+1595530614139	Copy compilation unit
+1595531750476	Copy compilation unit
+1595532406259	Copy compilation unit
+1595532417440	Copy compilation unit
+1595532525994	Copy compilation unit
+1595690397244	Copy compilation unit
+1595690470203	Rename type 'Playlist_hot'
+1595690508164	Rename type 'PlaylistHotRepository'
+1595690525808	Rename type 'ReturnPlayListHot'
+1595690925577	Copy compilation unit
+1595690938906	Copy compilation unit
+1595690988640	Copy compilation unit
+1595690999470	Copy compilation unit
+1595691014953	Copy compilation unit
+1595691059563	Rename type 'PlaylistHotService'
+1595691072783	Rename type 'RestPlaylistHotService'
+1595691279372	Copy compilation unit
+1595691326007	Rename type 'RestPlaylistHotController'
+1595691661173	Copy compilation unit

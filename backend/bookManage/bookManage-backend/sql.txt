@@ -1,0 +1,48 @@
+show databases;
+use andywang;
+
+select * from andy;
+alter table andy add column did int;
+update andy set did=2 where uid=6;
+create table dpart(
+did int primary key auto_increment,
+dname varchar(10)
+);
+select d.did,sum(s.salary) from salary s inner join andy a on (a.uid=s.uid) inner join dpart d on(d.did=a.did) group by d.did;
+
+select sum(s.salary) from salary s inner join andy a on (a.uid=s.uid) ;
+
+create table salary(
+sid int primary key auto_increment,
+uid int,
+salary int
+);
+select * from salary;
+insert into salary(uid,salary) values(5,500);
+insert into salary(uid,salary) values(6,600);
+insert into dpart(dname) values('sales');
+insert into dpart(dname) values('manager');
+
+select sum(s.salary),d.did from salary s inner join andy a on (a.uid=s.uid) inner join dpart d on(d.did=a.did) group by d.did ;
+select * from salary order by salary ;
+select did,uname,count(*) from andy group by did,uname having count(*)>1;
+
+select a.* from (select * from andy) a;
+WITH emp  as( select uname,uid, did ,row_number() OVER (
+		partition by  uname,did
+	) row_num from andy)  delete from andy using andy join emp on andy.uid=emp.uid where emp.row_num>1  ;
+
+
+select * from dpart;
+
+
+/**************************************************/
+create table book (id int primary key auto_increment,
+name varchar(20),
+writer varchar(10),
+introduction  varchar(50)
+);
+select * from book;
+
+insert  into book(name,writer,introduction) values('java EE' ,'jimmy','a introduciton od java EE');
+insert  into book(name,writer,introduction) values(' .net' ,'kaka','a introduciton od .net');

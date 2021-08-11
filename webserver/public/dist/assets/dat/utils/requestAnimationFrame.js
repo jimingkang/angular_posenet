@@ -1,0 +1,1 @@
+function e(e){setTimeout(e,1e3/60)}export default window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||e;

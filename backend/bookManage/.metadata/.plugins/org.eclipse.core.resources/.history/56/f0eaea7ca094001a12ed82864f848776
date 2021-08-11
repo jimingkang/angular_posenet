@@ -1,0 +1,27 @@
+package com.example.demo;
+public class Customer{
+    private String name;
+    private List<Customer> orders = new ArrayList<>();
+
+    public Customer(String name) {
+        this.name = name;
+    }
+
+    public String getName() { return name; }
+    public List<Customer> getOrders() { return orders; }
+
+    public Customer addOrder(Customer order) {
+        orders.add(order);
+        return this;
+    }
+}
+
+ class Order {
+    private int id;
+
+    public Order(int id) {
+        this.id = id;
+    }
+
+    public int getId() { return id; }
+}

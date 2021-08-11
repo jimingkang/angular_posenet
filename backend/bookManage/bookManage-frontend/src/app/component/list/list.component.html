@@ -1,0 +1,32 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div id="iframe">
+  <div class="title">
+    <div class="fl">
+      <label>{{title}}</label>
+      <label class="spn"> > </label>
+      <span>全部({{num}})部</span>
+    </div>
+    <div class="fr">
+      <input class="txt" type="text" [(ngModel)]="key" placeholder="请输入书籍名称" />
+      <button class="btn" (click)="search()">查询</button>
+    </div>
+  </div>
+  <ul>
+    <li class="no" *ngIf="show_books.length==0">没有找到与"{{key}}"相关的记录！</li>
+    <li class="yes" *ngFor="let book of show_books">
+      <a href="./disp/{{book.id}}">
+        <figure>
+          <img [src]="book.cover_url" alt="">
+        </figure>
+        <div>
+          <h3>{{book.title}}</h3>
+          <p>{{book.abstr}}</p>
+        </div>
+      </a>
+    </li>
+    <div class="page" *ngIf="show_books.length>0">
+      <a href="javascript:void(0)" (click)="prev()">上一页</a>
+      <a href="javascript:void(0)" (click)="next()">下一页</a>
+    </div>
+  </ul>
+</div>

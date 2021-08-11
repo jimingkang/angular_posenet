@@ -1,0 +1,44 @@
+#disp{
+    width: 1024px;
+    float: middle;
+}
+#disp .title{
+    border-bottom: solid 1px #ccc;
+    padding: 45px 0px;
+}
+#disp .title .spn{
+    display: inline;
+    font-size: 11px;
+    color:#666;
+    margin: 0px 10px;
+}
+#disp .img figure{
+    padding: 15px;
+    width: 180px;
+}
+#disp .img figure img{
+    width: 100%;
+    box-shadow: 5px 5px 5px #666;
+}
+#disp .tip h3{
+    font-size: 18px;
+    margin: 12px 10px;
+}
+ul{
+    margin: 0px 10px;
+}
+ul li{
+    font-size: 14px;
+    margin: 5px 0px;
+    color:#666;
+}
+ul li .btn2{
+    background-color:rgba(50, 49, 58, 0.893);
+    font-size: 18px;
+    border-radius: 8px;
+    font-family: "黑体";
+    color:#fff;
+    height: 38px;
+    width: 110px;
+    box-shadow: 1px 1px #ccc;
+}

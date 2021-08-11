@@ -1,0 +1,33 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div id="disp">
+  <div class="title">
+    <div class="fl">
+      
+      <label class="spn"> > </label>
+      <span>详细介绍</span>
+    </div>
+  </div>
+  <div class="img fl">
+    <figure>
+      <img [src]="book.cover_url" alt='' />
+    </figure>
+  </div>
+  <div class="tip fl">
+    <a [href]="book.url">
+    <h3>{{book.title}}</h3>
+  </a>
+    <ul>
+  
+      
+      <li>作者：{{book.abstr}}</li>
+     <!--<li>类型：{{book.type}}</li>
+        <li>地区：{{book.area}}</li>
+      <li>更新日期：{{book.updatetime}}</li>
+    -->
+      <li>评分：{{book.ratingvalue}}</li>
+      <li>
+        <button class="btn2">立即购买</button>
+      </li>
+    </ul>
+  </div>
+</div>
